@@ -65,7 +65,7 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOST_DNS }}
           REMOTE_USER: ${{ secrets.USERNAME }}
         with:
-          source: target/java-hello-app-1.0-SNAPSHOT.war
+          source: target/addressbook-2.0.war
           target: /var/lib/tomcat9/webapps/
 
       - name: Restart Tomcat
